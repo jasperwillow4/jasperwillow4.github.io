@@ -1,0 +1,1511 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>啊啊啊啊aaa - 原创影像_高清视频品牌官方网站</title>
+<meta name="description" content="啊啊啊啊aaa是专注于原创影像与高清内容的企业级视频品牌平台，官方网站汇集精品视频、创作者社区与企业动态，持续为用户提供值得信赖的内容生态。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23191826'/%3E%3Ccircle cx='32' cy='32' r='17' fill='none' stroke='%23ff5c5c' stroke-width='4'/%3E%3Cpath d='M27 23 L45 32 L27 41 Z' fill='%23ff5c5c'/%3E%3C/svg%3E">
+<style>
+:root{
+  --vv-bg:#191826;
+  --vv-bg2:#221f33;
+  --vv-panel:#282441;
+  --vv-line:rgba(255,255,255,.09);
+  --vv-text:#f2eefc;
+  --vv-muted:#a79fbe;
+  --vv-acc:#ff5c5c;
+  --vv-acc2:#48e0b8;
+  --vv-acc3:#7c6cf0;
+  --vv-radius:16px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+  background:var(--vv-bg);
+  color:var(--vv-text);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer}
+h1,h2,h3,h4{margin:0;line-height:1.3}
+p{margin:0}
+.vv-wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 20px}
+.vv-anchor{scroll-margin-top:130px}
+/* ---------- sticky top ---------- */
+.vv-sticky-head{
+  position:sticky;top:0;z-index:60;
+  backdrop-filter:blur(14px);
+  background:rgba(20,18,32,.92);
+  border-bottom:1px solid var(--vv-line);
+}
+.vv-notice{
+  background:linear-gradient(90deg,#3a1f52,#241a3d 45%,#1c2a3f);
+  border-bottom:1px solid var(--vv-line);
+  font-size:13px;
+}
+.vv-notice-inner{
+  display:flex;align-items:center;gap:14px;
+  padding:7px 0;
+  overflow:hidden;
+}
+.vv-notice-tag{
+  flex:none;
+  background:var(--vv-acc);
+  color:#fff;font-weight:700;font-size:11px;
+  padding:2px 9px;border-radius:99px;letter-spacing:.06em;
+}
+.vv-notice-track{flex:1;overflow:hidden;white-space:nowrap}
+.vv-notice-item{display:none;color:#e5ddf8;overflow:hidden;text-overflow:ellipsis}
+.vv-notice-item.vv-on{display:block}
+.vv-notice-item b{color:var(--vv-acc2);font-weight:600}
+.vv-head{display:flex;align-items:center;gap:18px;padding:12px 0}
+.vv-logo{display:flex;align-items:center;gap:10px;flex:none}
+.vv-logo-mark{
+  width:38px;height:38px;border-radius:11px;
+  background:linear-gradient(135deg,var(--vv-acc),#a03cff);
+  display:grid;place-items:center;flex:none;
+  box-shadow:0 6px 18px rgba(255,92,92,.28);
+}
+.vv-logo-mark svg{width:20px;height:20px}
+.vv-logo-txt{font-size:18px;font-weight:800;letter-spacing:.02em}
+.vv-logo-sub{display:block;font-size:10px;color:var(--vv-muted);font-weight:400;letter-spacing:.18em}
+.vv-nav{display:flex;gap:4px;flex:1;flex-wrap:wrap}
+.vv-nav a{
+  font-size:14px;color:#cdc6e2;padding:7px 12px;border-radius:9px;
+  transition:.2s;
+}
+.vv-nav a:hover{background:rgba(255,255,255,.08);color:#fff}
+.vv-head-actions{display:flex;align-items:center;gap:10px;flex:none}
+.vv-search{
+  display:flex;align-items:center;gap:6px;
+  background:var(--vv-panel);border:1px solid var(--vv-line);
+  border-radius:99px;padding:5px 6px 5px 14px;
+}
+.vv-search input{
+  background:none;border:0;outline:0;color:var(--vv-text);
+  font-size:13px;width:130px;
+}
+.vv-search input::placeholder{color:#8b83a6}
+.vv-search button{
+  border:0;background:var(--vv-acc);color:#fff;
+  border-radius:99px;padding:5px 13px;font-size:13px;font-weight:600;
+}
+.vv-btn{
+  border:1px solid var(--vv-line);background:transparent;color:var(--vv-text);
+  border-radius:99px;padding:8px 18px;font-size:14px;transition:.2s;
+}
+.vv-btn:hover{border-color:var(--vv-acc);color:#fff}
+.vv-btn-solid{
+  background:linear-gradient(120deg,var(--vv-acc),#ff8a5c);
+  border:0;color:#fff;font-weight:700;
+  box-shadow:0 8px 22px rgba(255,92,92,.3);
+}
+.vv-btn-solid:hover{transform:translateY(-1px)}
+.vv-burger{
+  display:none;width:40px;height:38px;border-radius:10px;
+  border:1px solid var(--vv-line);background:var(--vv-panel);
+  flex-direction:column;justify-content:center;align-items:center;gap:4px;
+}
+.vv-burger span{width:18px;height:2px;background:var(--vv-text);border-radius:2px}
+/* ---------- hero ---------- */
+.vv-hero{
+  position:relative;padding:56px 0 64px;overflow:hidden;
+  background:
+    radial-gradient(900px 420px at 82% -8%,rgba(124,108,240,.34),transparent 62%),
+    radial-gradient(700px 380px at 6% 110%,rgba(72,224,184,.16),transparent 65%);
+}
+.vv-hero-grid{
+  display:grid;grid-template-columns:1.06fr .94fr;gap:48px;align-items:center;
+}
+.vv-kicker{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:12px;letter-spacing:.16em;color:var(--vv-acc2);
+  border:1px solid rgba(72,224,184,.35);border-radius:99px;
+  padding:4px 13px;margin-bottom:18px;
+}
+.vv-kicker i{width:6px;height:6px;border-radius:50%;background:var(--vv-acc2);display:block}
+h1.vv-title{
+  font-size:clamp(38px,5.4vw,62px);
+  font-weight:900;letter-spacing:-.02em;
+  background:linear-gradient(92deg,#ffffff,#ffd9d9 40%,#b9a8ff);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.vv-hero-lead{
+  margin-top:16px;font-size:16px;color:#d6cde9;max-width:540px;
+}
+.vv-hero-btns{display:flex;gap:12px;margin-top:26px;flex-wrap:wrap}
+.vv-stats{display:flex;gap:14px;margin-top:32px;flex-wrap:wrap}
+.vv-stat{
+  flex:1 1 130px;background:rgba(255,255,255,.04);
+  border:1px solid var(--vv-line);border-radius:14px;
+  padding:14px 16px;
+}
+.vv-stat b{display:block;font-size:24px;color:#fff;font-weight:800;letter-spacing:-.01em}
+.vv-stat span{font-size:12px;color:var(--vv-muted)}
+.vv-hero-visual{position:relative}
+.vv-hero-player{
+  border-radius:22px;overflow:hidden;position:relative;
+  border:1px solid rgba(255,255,255,.14);
+  box-shadow:0 30px 70px rgba(0,0,0,.55);
+  aspect-ratio:16/10;
+}
+.vv-hero-player img{width:100%;height:100%;object-fit:cover}
+.vv-hero-player::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(15,12,26,.05) 30%,rgba(15,12,26,.82));
+}
+.vv-hero-play{
+  position:absolute;inset:0;display:grid;place-items:center;z-index:2;
+}
+.vv-hero-play button{
+  width:70px;height:70px;border-radius:50%;border:0;
+  background:rgba(255,255,255,.92);display:grid;place-items:center;
+  transition:.25s;
+}
+.vv-hero-play button:hover{transform:scale(1.07)}
+.vv-hero-play svg{width:24px;height:24px;margin-left:3px;fill:var(--vv-acc)}
+.vv-hero-cap{
+  position:absolute;left:20px;right:20px;bottom:16px;z-index:2;
+}
+.vv-hero-cap h3{font-size:16px;font-weight:700}
+.vv-hero-cap p{font-size:12px;color:#cfc6e4;margin-top:3px}
+.vv-hero-badge{
+  position:absolute;top:-14px;right:-10px;z-index:3;
+  background:var(--vv-acc2);color:#0f3329;font-weight:800;font-size:12px;
+  border-radius:99px;padding:6px 14px;transform:rotate(4deg);
+  box-shadow:0 10px 24px rgba(72,224,184,.35);
+}
+/* ---------- sections ---------- */
+.vv-sec{padding:60px 0}
+.vv-sec-alt{background:linear-gradient(180deg,#1d1b2d,#191826)}
+.vv-sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:30px;flex-wrap:wrap}
+.vv-sec-head h2{
+  font-size:clamp(23px,2.6vw,31px);font-weight:800;letter-spacing:-.01em;
+}
+.vv-sec-head h2 em{font-style:normal;color:var(--vv-acc)}
+.vv-sec-head p{font-size:13.5px;color:var(--vv-muted);margin-top:6px}
+.vv-sec-link{font-size:13.5px;color:var(--vv-acc2);white-space:nowrap}
+.vv-sec-link:hover{text-decoration:underline}
+/* focus */
+.vv-focus-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:20px}
+.vv-vcard{
+  background:var(--vv-panel);border:1px solid var(--vv-line);
+  border-radius:var(--vv-radius);overflow:hidden;
+  transition:transform .25s,border-color .25s;
+  display:flex;flex-direction:column;
+}
+.vv-vcard:hover{transform:translateY(-4px);border-color:rgba(255,92,92,.4)}
+.vv-cover{position:relative;aspect-ratio:16/9;overflow:hidden;background:#151323}
+.vv-cover img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.vv-vcard:hover .vv-cover img{transform:scale(1.05)}
+.vv-cover::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,transparent 45%,rgba(10,8,18,.7));
+}
+.vv-cover-tag{
+  position:absolute;top:10px;left:10px;z-index:3;
+  font-size:11px;font-weight:700;letter-spacing:.04em;
+  background:rgba(25,24,38,.78);border:1px solid rgba(255,255,255,.18);
+  color:#fff;border-radius:99px;padding:3px 10px;backdrop-filter:blur(4px);
+}
+.vv-cover-dur{
+  position:absolute;right:10px;bottom:10px;z-index:3;
+  font-size:11px;color:#fff;background:rgba(10,8,18,.78);
+  border-radius:6px;padding:2px 7px;
+}
+.vv-cover-play{
+  position:absolute;z-index:3;left:50%;top:50%;transform:translate(-50%,-50%);
+  width:52px;height:52px;border-radius:50%;
+  background:rgba(255,255,255,.9);display:grid;place-items:center;
+  opacity:0;transition:.25s;
+}
+.vv-vcard:hover .vv-cover-play{opacity:1}
+.vv-cover-play svg{width:18px;height:18px;fill:var(--vv-acc);margin-left:2px}
+.vv-vcard-body{padding:15px 17px 17px;display:flex;flex-direction:column;gap:9px;flex:1}
+.vv-vcard-body h3{font-size:16px;font-weight:700}
+.vv-vcard-body p{font-size:13px;color:var(--vv-muted)}
+.vv-meta{display:flex;align-items:center;gap:8px;font-size:12px;color:#8f87aa;margin-top:auto;flex-wrap:wrap}
+.vv-avt{
+  width:24px;height:24px;border-radius:50%;display:grid;place-items:center;
+  font-size:11px;font-weight:700;color:#fff;flex:none;
+}
+.vv-avt.a1{background:linear-gradient(135deg,#ff5c5c,#ff9a5c)}
+.vv-avt.a2{background:linear-gradient(135deg,#48e0b8,#3aa7e0)}
+.vv-avt.a3{background:linear-gradient(135deg,#7c6cf0,#c46cf0)}
+.vv-avt.a4{background:linear-gradient(135deg,#f0b46c,#e05c8a)}
+.vv-avt.a5{background:linear-gradient(135deg,#5c9aff,#6cf0c0)}
+.vv-avt.a6{background:linear-gradient(135deg,#ff8a5c,#e04090)}
+.vv-actions{display:flex;gap:6px;margin-top:2px}
+.vv-act{
+  border:1px solid var(--vv-line);background:transparent;color:#b9b0d2;
+  border-radius:99px;padding:3px 11px;font-size:12px;display:inline-flex;
+  align-items:center;gap:5px;transition:.2s;
+}
+.vv-act:hover{border-color:var(--vv-acc);color:#fff}
+.vv-act.vv-on{background:rgba(255,92,92,.16);border-color:rgba(255,92,92,.55);color:#ff9f9f}
+.vv-side-list{display:flex;flex-direction:column;gap:14px}
+.vv-mini{
+  display:grid;grid-template-columns:118px 1fr;gap:12px;
+  background:rgba(255,255,255,.035);border:1px solid var(--vv-line);
+  border-radius:12px;padding:9px;transition:.2s;
+}
+.vv-mini:hover{background:rgba(255,255,255,.07);border-color:rgba(124,108,240,.45)}
+.vv-mini .vv-cover{border-radius:8px;aspect-ratio:16/10}
+.vv-mini .vv-cover-play{width:32px;height:32px}
+.vv-mini .vv-cover-play svg{width:12px;height:12px}
+.vv-mini h4{font-size:13.5px;font-weight:600;line-height:1.45}
+.vv-mini span{font-size:11.5px;color:var(--vv-muted);display:block;margin-top:4px}
+/* video flow */
+.vv-flow{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+/* topics */
+.vv-topics{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.vv-topic{
+  border-radius:var(--vv-radius);padding:22px;position:relative;overflow:hidden;
+  border:1px solid var(--vv-line);background:var(--vv-panel);
+  display:flex;flex-direction:column;gap:10px;min-height:170px;
+  transition:.25s;
+}
+.vv-topic:hover{transform:translateY(-4px);border-color:rgba(72,224,184,.45)}
+.vv-topic::before{
+  content:"";position:absolute;width:180px;height:180px;border-radius:50%;
+  right:-70px;top:-70px;background:radial-gradient(circle,rgba(124,108,240,.45),transparent 70%);
+}
+.vv-topic h3{font-size:17px;font-weight:800;position:relative;z-index:2}
+.vv-topic p{font-size:13px;color:var(--vv-muted);position:relative;z-index:2;flex:1}
+.vv-topic-foot{display:flex;align-items:center;justify-content:space-between;font-size:12px;position:relative;z-index:2}
+.vv-chip{
+  display:inline-block;font-size:11.5px;padding:2px 10px;border-radius:99px;
+  background:rgba(72,224,184,.14);color:var(--vv-acc2);border:1px solid rgba(72,224,184,.3);
+}
+.vv-chip.warm{background:rgba(255,92,92,.14);color:#ff9f9f;border-color:rgba(255,92,92,.3)}
+.vv-chip.violet{background:rgba(124,108,240,.18);color:#b9aaff;border-color:rgba(124,108,240,.36)}
+/* creators */
+.vv-creators{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.vv-creator{
+  background:var(--vv-panel);border:1px solid var(--vv-line);
+  border-radius:var(--vv-radius);padding:20px;display:flex;gap:14px;
+  transition:.25s;
+}
+.vv-creator:hover{border-color:rgba(255,138,92,.45);transform:translateY(-3px)}
+.vv-creator .vv-avt{width:52px;height:52px;font-size:19px;border-radius:16px}
+.vv-creator-info{min-width:0}
+.vv-creator-info h3{font-size:15px;font-weight:700}
+.vv-creator-info .vv-role{font-size:11.5px;color:var(--vv-acc2);margin-top:2px}
+.vv-creator-info p{font-size:12.5px;color:var(--vv-muted);margin-top:7px;line-height:1.6}
+.vv-creator-nums{display:flex;gap:14px;margin-top:9px;font-size:11.5px;color:#948cab}
+.vv-creator-nums b{color:#fff;font-weight:700}
+/* works wall */
+.vv-wall{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.vv-wall figure{
+  margin:0;position:relative;border-radius:12px;overflow:hidden;
+  border:1px solid var(--vv-line);background:#151323;
+}
+.vv-wall figure img{width:100%;height:100%;object-fit:cover;transition:transform .45s}
+.vv-wall figure:hover img{transform:scale(1.06)}
+.vv-wall figcaption{
+  position:absolute;inset:auto 0 0 0;padding:22px 11px 9px;
+  font-size:12px;color:#fff;
+  background:linear-gradient(180deg,transparent,rgba(10,8,18,.86));
+}
+.vv-wall .w-lg{grid-column:span 2;grid-row:span 2;aspect-ratio:1/1}
+.vv-wall .w-md{aspect-ratio:1/1}
+.vv-wall .w-sm{aspect-ratio:1/1}
+/* testimonials */
+.vv-quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.vv-quote{
+  background:var(--vv-panel);border:1px solid var(--vv-line);
+  border-radius:var(--vv-radius);padding:19px;display:flex;flex-direction:column;gap:11px;
+}
+.vv-quote p{font-size:13.5px;color:#ddd5ee;flex:1}
+.vv-quote-who{display:flex;align-items:center;gap:9px;font-size:12.5px;color:var(--vv-muted)}
+.vv-stars{color:#ffc46c;font-size:12px;letter-spacing:.1em}
+/* inspiration */
+.vv-inspire{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.vv-insp{
+  border-radius:14px;padding:18px;border:1px dashed rgba(255,255,255,.18);
+  background:rgba(255,255,255,.03);
+}
+.vv-insp h3{font-size:14.5px;margin-bottom:7px}
+.vv-insp p{font-size:12.5px;color:var(--vv-muted)}
+.vv-insp .vv-act{margin-top:11px}
+/* news */
+.vv-news{display:flex;flex-direction:column;gap:0}
+.vv-news li{
+  list-style:none;display:grid;grid-template-columns:96px 1fr auto;gap:16px;
+  align-items:center;padding:15px 0;border-bottom:1px dashed var(--vv-line);
+}
+.vv-news li:last-child{border-bottom:0}
+.vv-news time{font-size:12.5px;color:var(--vv-acc2);letter-spacing:.02em}
+.vv-news h3{font-size:14.5px;font-weight:600}
+.vv-news p{font-size:12.5px;color:var(--vv-muted);margin-top:3px}
+.vv-news .vv-chip{flex:none}
+/* faq */
+.vv-faq{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.vv-faq details{
+  background:var(--vv-panel);border:1px solid var(--vv-line);
+  border-radius:12px;padding:0 16px;
+}
+.vv-faq details[open]{border-color:rgba(124,108,240,.5)}
+.vv-faq summary{
+  cursor:pointer;list-style:none;padding:14px 0;font-size:14px;font-weight:600;
+  display:flex;justify-content:space-between;gap:12px;align-items:center;
+}
+.vv-faq summary::-webkit-details-marker{display:none}
+.vv-faq summary::after{content:"+";color:var(--vv-acc2);font-size:18px;font-weight:400}
+.vv-faq details[open] summary::after{content:"–"}
+.vv-faq details p{font-size:13px;color:var(--vv-muted);padding:0 0 15px}
+/* about / analysis long text */
+.vv-about{
+  display:grid;grid-template-columns:1fr 1.35fr;gap:40px;align-items:start;
+}
+.vv-about-visual{
+  border-radius:20px;overflow:hidden;border:1px solid var(--vv-line);
+  position:relative;position:sticky;top:140px;
+}
+.vv-about-visual img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.vv-about-visual .vv-cover-tag{top:14px;left:14px}
+.vv-long h2{font-size:clamp(22px,2.4vw,28px);font-weight:800;margin-bottom:14px}
+.vv-long h3{font-size:16px;font-weight:700;margin:22px 0 8px;color:#fff}
+.vv-long p{font-size:14px;color:#c3bbd8;margin-bottom:11px}
+.vv-long .vv-quote-line{
+  border-left:3px solid var(--vv-acc);padding:4px 0 4px 15px;
+  color:#e6dff8;font-size:14px;margin:16px 0;
+}
+/* contact */
+.vv-contact{
+  display:grid;grid-template-columns:1.15fr 1fr;gap:26px;
+  align-items:stretch;
+}
+.vv-contact-card{
+  background:linear-gradient(140deg,#2b2344,#1d1b2d 60%);
+  border:1px solid var(--vv-line);border-radius:20px;padding:28px;
+}
+.vv-contact-card h2{font-size:24px;font-weight:800;margin-bottom:10px}
+.vv-contact-card p{font-size:13.5px;color:var(--vv-muted);margin-bottom:20px}
+.vv-contact-list{display:grid;gap:10px;font-size:13.5px}
+.vv-contact-list div{display:flex;gap:10px;align-items:center}
+.vv-contact-list b{color:var(--vv-acc2);font-weight:600;flex:none;min-width:62px}
+.vv-form{background:var(--vv-panel);border:1px solid var(--vv-line);border-radius:20px;padding:26px;display:flex;flex-direction:column;gap:12px}
+.vv-form label{font-size:12.5px;color:var(--vv-muted)}
+.vv-form input,.vv-form textarea,.vv-form select{
+  width:100%;background:#1a1829;border:1px solid var(--vv-line);
+  border-radius:10px;padding:10px 12px;color:var(--vv-text);
+  font-size:13.5px;outline:0;font-family:inherit;
+}
+.vv-form input:focus,.vv-form textarea:focus,.vv-form select:focus{border-color:var(--vv-acc3)}
+.vv-form textarea{resize:vertical;min-height:84px}
+/* footer */
+.vv-footer{
+  border-top:1px solid var(--vv-line);
+  background:#141220;padding:46px 0 30px;
+}
+.vv-foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:30px}
+.vv-foot-grid h4{font-size:13.5px;font-weight:700;margin-bottom:12px;color:#fff}
+.vv-foot-grid a,.vv-foot-grid p{font-size:12.5px;color:var(--vv-muted);display:block;margin-bottom:8px}
+.vv-foot-grid a:hover{color:var(--vv-acc2)}
+.vv-foot-bottom{
+  margin-top:32px;padding-top:20px;border-top:1px solid var(--vv-line);
+  display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+  font-size:12px;color:#857d9c;
+}
+/* back to top & toast */
+.vv-top{
+  position:fixed;right:20px;bottom:24px;z-index:70;
+  width:44px;height:44px;border-radius:50%;border:1px solid var(--vv-line);
+  background:var(--vv-panel);color:var(--vv-text);display:grid;place-items:center;
+  opacity:0;pointer-events:none;transition:.25s;
+}
+.vv-top.vv-show{opacity:1;pointer-events:auto}
+.vv-top:hover{border-color:var(--vv-acc)}
+.vv-toast{
+  position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);
+  background:#2c2746;border:1px solid rgba(255,255,255,.16);
+  color:#fff;font-size:13px;padding:10px 20px;border-radius:99px;z-index:99;
+  opacity:0;pointer-events:none;transition:.3s;box-shadow:0 14px 34px rgba(0,0,0,.5);
+}
+.vv-toast.vv-show{opacity:1;transform:translate(-50%,0)}
+/* modal */
+.vv-modal{
+  position:fixed;inset:0;z-index:90;display:none;
+  background:rgba(8,6,16,.72);backdrop-filter:blur(6px);
+  padding:24px;overflow:auto;
+}
+.vv-modal.vv-open{display:grid;place-items:center}
+.vv-modal-box{
+  width:100%;max-width:520px;background:#221f33;
+  border:1px solid rgba(255,255,255,.14);border-radius:18px;padding:24px;position:relative;
+}
+.vv-modal-box h3{font-size:18px;margin-bottom:6px}
+.vv-modal-box .vv-sub{font-size:12.5px;color:var(--vv-muted);margin-bottom:16px}
+.vv-modal-close{
+  position:absolute;right:14px;top:12px;background:none;border:0;color:#a79fbe;font-size:20px;
+}
+.vv-share-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.vv-share-row .vv-act{justify-content:center;padding:10px;font-size:13px}
+.vv-note{font-size:12px;color:#8f87aa;margin-top:14px}
+.vv-hidden{display:none}
+@media (max-width:1020px){
+  .vv-hero-grid{grid-template-columns:1fr;gap:34px}
+  .vv-about{grid-template-columns:1fr;gap:26px}
+  .vv-about-visual{position:static}
+  .vv-about-visual img{aspect-ratio:16/10}
+  .vv-focus-grid{grid-template-columns:1fr}
+  .vv-flow{grid-template-columns:repeat(2,1fr)}
+  .vv-creators{grid-template-columns:repeat(2,1fr)}
+  .vv-topics{grid-template-columns:repeat(2,1fr)}
+  .vv-quotes{grid-template-columns:repeat(2,1fr)}
+  .vv-inspire{grid-template-columns:repeat(2,1fr)}
+  .vv-foot-grid{grid-template-columns:1fr 1fr}
+  .vv-contact{grid-template-columns:1fr}
+  .vv-wall{grid-template-columns:repeat(3,1fr)}
+}
+@media (max-width:760px){
+  .vv-nav{
+    display:none;position:absolute;left:0;right:0;top:100%;
+    background:#1b1830;border-bottom:1px solid var(--vv-line);
+    padding:10px 20px 16px;flex-direction:column;
+  }
+  .vv-nav.vv-open{display:flex}
+  .vv-burger{display:flex}
+  .vv-search{display:none}
+  .vv-sec{padding:44px 0}
+  .vv-flow{grid-template-columns:1fr}
+  .vv-creators{grid-template-columns:1fr}
+  .vv-topics{grid-template-columns:1fr}
+  .vv-quotes{grid-template-columns:1fr}
+  .vv-inspire{grid-template-columns:1fr}
+  .vv-faq{grid-template-columns:1fr}
+  .vv-wall{grid-template-columns:repeat(2,1fr)}
+  .vv-news li{grid-template-columns:1fr;gap:6px}
+  .vv-stats{gap:10px}
+  .vv-foot-grid{grid-template-columns:1fr}
+  .vv-share-row{grid-template-columns:1fr}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="vv-sticky-head">
+  <div class="vv-notice">
+    <div class="vv-wrap vv-notice-inner">
+      <span class="vv-notice-tag">官方发布</span>
+      <div class="vv-notice-track" id="vvNoticeTrack">
+        <div class="vv-notice-item vv-on">「城市十二时辰」共创企划第二季开放报名，<b>首批 60 位创作者</b>名额已上线，投稿入口今日开启。</div>
+        <div class="vv-notice-item vv-on"><b>2026 冬季影像挑战赛</b>作品上传通道持续开放，评选维度含叙事、剪辑与声音设计三项。</div>
+        <div class="vv-notice-item vv-on">啊啊啊啊aaa 官方网站企业动态：精品内容扶持计划新增 <b>4 个垂类</b>方向，涵盖纪录、手作与户外。</div>
+        <div class="vv-notice-item vv-on">本周口碑榜更新：<b>《凌晨四点的面包房》</b>连续三周进入热度榜前十。</div>
+      </div>
+    </div>
+  </div>
+  <header class="vv-head vv-wrap">
+    <a class="vv-logo" href="#vvTop" aria-label="啊啊啊啊aaa 官方网站首页">
+      <span class="vv-logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M8 5 L19 12 L8 19 Z" fill="#fff"/></svg>
+      </span>
+      <span>
+        <span class="vv-logo-txt">啊啊啊啊aaa</span>
+        <span class="vv-logo-sub">VIDEO BRAND</span>
+      </span>
+    </a>
+    <nav class="vv-nav" id="vvNav" aria-label="主导航">
+      <a href="#vvFocus">焦点内容</a>
+      <a href="#vvFlow">热门视频</a>
+      <a href="#vvTopics">专题企划</a>
+      <a href="#vvCreators">创作者</a>
+      <a href="#vvAbout">品牌解析</a>
+      <a href="#vvNews">企业动态</a>
+      <a href="#vvFaq">帮助</a>
+      <a href="#vvContact">联系</a>
+    </nav>
+    <div class="vv-head-actions">
+      <form class="vv-search" id="vvSearchForm" role="search">
+        <input id="vvSearchInput" type="search" placeholder="搜索视频 / 创作者" aria-label="站内搜索">
+        <button type="submit">搜索</button>
+      </form>
+      <button class="vv-btn vv-btn-solid" id="vvSubmitBtn" type="button">投稿</button>
+      <button class="vv-burger" id="vvBurger" type="button" aria-label="展开导航" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+</div>
+
+<main id="vvTop">
+
+  <!-- HERO -->
+  <section class="vv-hero">
+    <div class="vv-wrap vv-hero-grid">
+      <div>
+        <span class="vv-kicker"><i></i>官网 · 品牌 · 企业级内容平台</span>
+        <h1 class="vv-title">啊啊啊啊aaa</h1>
+        <p class="vv-hero-lead">
+          啊啊啊啊aaa 是一家专注于原创影像与高清视频内容的品牌企业。我们以官方网站为窗口，
+          把真实的生活切片、专业的知识讲解与用心的创作故事，整理成可持续生长的内容生态。
+        </p>
+        <div class="vv-hero-btns">
+          <a class="vv-btn vv-btn-solid" href="#vvFocus">浏览焦点内容</a>
+          <a class="vv-btn" href="#vvAbout">了解品牌故事</a>
+        </div>
+        <div class="vv-stats">
+          <div class="vv-stat"><b data-count="12800">0</b><span>原创视频作品（条）</span></div>
+          <div class="vv-stat"><b data-count="960">0</b><span>签约与入驻创作者（位）</span></div>
+          <div class="vv-stat"><b data-count="4200">0</b><span>日均内容互动（次）</span></div>
+        </div>
+      </div>
+      <div class="vv-hero-visual">
+        <span class="vv-hero-badge">本周焦点</span>
+        <div class="vv-hero-player">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 400'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%232b1d4d'/%3E%3Cstop offset='.55' stop-color='%235c3f8f'/%3E%3Cstop offset='1' stop-color='%23ff7a6b'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='400' fill='url(%23g1)'/%3E%3Ccircle cx='470' cy='120' r='86' fill='%23ffd9a8' opacity='.5'/%3E%3Ccircle cx='150' cy='300' r='120' fill='%2348e0b8' opacity='.22'/%3E%3Cpath d='M0 300 L120 240 L250 290 L380 210 L520 260 L640 200 L640 400 L0 400 Z' fill='%23191726' opacity='.78'/%3E%3Cpath d='M0 336 L140 300 L300 340 L470 290 L640 330 L640 400 L0 400 Z' fill='%23120f1e'/%3E%3Cg fill='%23ffffff' opacity='.85'%3E%3Crect x='76' y='72' width='118' height='9' rx='4.5'/%3E%3Crect x='76' y='94' width='76' height='9' rx='4.5' opacity='.6'/%3E%3C/g%3E%3C/svg%3E" alt="啊啊啊啊aaa 品牌主视觉：暮色山脊与城市轮廓构成的影像画面" width="640" height="400">
+          <div class="vv-hero-play">
+            <button type="button" aria-label="查看本周焦点内容介绍" data-vv-video="本周焦点：城市十二时辰·第一集">▶</button>
+          </div>
+          <div class="vv-hero-cap">
+            <h3>城市十二时辰 · 第一集：凌晨四点的面包房</h3>
+            <p>出品：啊啊啊啊aaa 官方内容中心 · 时长 12:40 · 纪录 · 高清</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOCUS -->
+  <section class="vv-sec vv-sec-alt vv-anchor" id="vvFocus">
+    <div class="vv-wrap">
+      <div class="vv-sec-head">
+        <div>
+          <h2>焦点内容 <em>·</em> 编辑部本周重点推荐</h2>
+          <p>由啊啊啊啊aaa 官方网站内容中心策划，聚焦值得被认真看完的精品内容。</p>
+        </div>
+        <a class="vv-sec-link" href="#vvFlow">查看全部热门视频 →</a>
+      </div>
+      <div class="vv-focus-grid">
+        <article class="vv-vcard">
+          <div class="vv-cover">
+            <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='g2' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%231a2c3d'/%3E%3Cstop offset='.6' stop-color='%232a5b78'/%3E%3Cstop offset='1' stop-color='%23f3c07a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23g2)'/%3E%3Ccircle cx='520' cy='96' r='52' fill='%23fff0cf' opacity='.85'/%3E%3Cpath d='M0 250 L110 196 L220 238 L330 178 L450 226 L560 182 L640 214 L640 360 L0 360 Z' fill='%230e1a22'/%3E%3Cg stroke='%23f3c07a' stroke-width='3' opacity='.6' fill='none'%3E%3Cpath d='M60 320 L60 268 M110 320 L110 246 M160 320 L160 280'/%3E%3C/g%3E%3Cg fill='%23ffffff' opacity='.8'%3E%3Crect x='46' y='54' width='132' height='10' rx='5'/%3E%3Crect x='46' y='76' width='84' height='10' rx='5' opacity='.55'/%3E%3C/g%3E%3C/svg%3E" alt="城市十二时辰系列封面：清晨江面与远山剪影" width="640" height="360">
+            <span class="vv-cover-tag">重点推荐</span>
+            <span class="vv-cover-dur">12:40</span>
+            <span class="vv-cover-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5 L19 12 L8 19 Z"/></svg></span>
+          </div>
+          <div class="vv-vcard-body">
+            <h3>城市十二时辰 · 第一集：凌晨四点的面包房</h3>
+            <p>跟着烘焙师老周走进他每天开工的第一个小时。面团、发酵箱与街灯，构成这座城市最早的呼吸节奏。本集为啊啊啊啊aaa 官方网站独家策划的纪录系列开篇之作。</p>
+            <div class="vv-meta">
+              <span class="vv-avt a1">周</span>
+              <span>老周的面包房</span>
+              <span>·</span>
+              <span>2026-11-16</span>
+            </div>
+            <div class="vv-actions">
+              <button class="vv-act" type="button" data-like="1284">赞 <b>1284</b></button>
+              <button class="vv-act" type="button" data-fav>收藏</button>
+              <button class="vv-act" type="button" data-share="城市十二时辰 · 第一集：凌晨四点的面包房">分享</button>
+            </div>
+          </div>
+        </article>
+        <div class="vv-side-list">
+          <article class="vv-mini">
+            <div class="vv-cover">
+              <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Cdefs%3E%3ClinearGradient id='g3' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23342b22'/%3E%3Cstop offset='1' stop-color='%23d98a4a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='320' height='200' fill='url(%23g3)'/%3E%3Cellipse cx='160' cy='150' rx='120' ry='40' fill='%23f6d8b0' opacity='.35'/%3E%3Ccircle cx='96' cy='110' r='34' fill='%23f6d8b0' opacity='.7'/%3E%3Ccircle cx='210' cy='122' r='26' fill='%23ffb877' opacity='.7'/%3E%3Crect x='24' y='24' width='90' height='8' rx='4' fill='%23fff' opacity='.7'/%3E%3C/svg%3E" alt="手作系列封面：暖光下的陶土与手掌" width="320" height="200">
+              <span class="vv-cover-dur">08:12</span>
+              <span class="vv-cover-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5 L19 12 L8 19 Z"/></svg></span>
+            </div>
+            <div>
+              <h4>一只陶碗的三十六道工序</h4>
+              <span>手作 · 匠人访谈 · 8.2 万次播放</span>
+            </div>
+          </article>
+          <article class="vv-mini">
+            <div class="vv-cover">
+              <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Cdefs%3E%3ClinearGradient id='g4' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%231d2d3a'/%3E%3Cstop offset='1' stop-color='%2348e0b8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='320' height='200' fill='url(%23g4)'/%3E%3Cpath d='M0 160 L80 118 L150 148 L230 104 L320 146 L320 200 L0 200 Z' fill='%230f1c24' opacity='.85'/%3E%3Cg stroke='%23e9fff7' stroke-width='2' opacity='.6' fill='none'%3E%3Ccircle cx='250' cy='60' r='20'/%3E%3Cpath d='M250 40 L250 12'/%3E%3C/g%3E%3Crect x='22' y='22' width='72' height='7' rx='3.5' fill='%23fff' opacity='.65'/%3E%3C/svg%3E" alt="户外系列封面：夜行山径与头灯轨迹" width="320" height="200">
+              <span class="vv-cover-dur">15:05</span>
+              <span class="vv-cover-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5 L19 12 L8 19 Z"/></svg></span>
+            </div>
+            <div>
+              <h4>夜行山径：一次不赶路的徒步</h4>
+              <span>户外 · 影像日志 · 6.4 万次播放</span>
+            </div>
+          </article>
+          <article class="vv-mini">
+            <div class="vv-cover">
+              <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Cdefs%3E%3ClinearGradient id='g5' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%233b2148'/%3E%3Cstop offset='1' stop-color='%23c46cf0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='320' height='200' fill='url(%23g5)'/%3E%3Crect x='60' y='60' width='200' height='90' rx='12' fill='%23f4e9ff' opacity='.28'/%3E%3Cpath d='M120 90 L160 130 L120 170' stroke='%23fff' stroke-width='6' fill='none' opacity='.8'/%3E%3Cpath d='M200 90 L200 170' stroke='%23fff' stroke-width='6' opacity='.5'/%3E%3C/svg%3E" alt="教程系列封面：剪辑时间轴与轨道色彩" width="320" height="200">
+              <span class="vv-cover-dur">22:30</span>
+              <span class="vv-cover-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5 L19 12 L8 19 Z"/></svg></span>
+            </div>
+            <div>
+              <h4>从素材到成片：一条纪录片的剪辑思路</h4>
+              <span>教程 · 经验分享 · 9.7 万次播放</span>
+            </div>
+          </article>
+          <article class="vv-mini">
+            <div class="vv-cover">
+              <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Cdefs%3E%3ClinearGradient id='g6' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%232c1f2e'/%3E%3Cstop offset='1' stop-color='%23ff5c5c'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='320' height='200' fill='url(%23g6)'/%3E%3Ccircle cx='160' cy='100' r='52' fill='none' stroke='%23ffe0e0' stroke-width='4' opacity='.7'/%3E%3Ccircle cx='160' cy='100' r='22' fill='%23ffe0e0' opacity='.8'/%3E%3Cg fill='%23fff' opacity='.55'%3E%3Crect x='24' y='24' width='60' height='7' rx='3.5'/%3E%3Crect x='24' y='42' width='40' height='7' rx='3.5'/%3E%3C/g%3E%3C/svg%3E" alt="人物访谈封面：录音棚里的对话场景" width="320" height="200">
+              <span class="vv-cover-dur">18:44</span>
+              <span class="vv-cover-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5 L19 12 L8 19 Z"/></svg></span>
+            </div>
+            <div>
+              <h4>把镜头交给普通人：一次关于表达的访谈</h4>
+              <span>人物访谈 · 深度对话 · 5.1 万次播放</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FLOW -->
+  <section class="vv-sec vv-anchor" id="vvFlow">
+    <div class="vv-wrap">
+      <div class="vv-sec-head">
+        <div>
+          <h2>热门视频流 <em>·</em> 来自社区的持续创作</h2>
+          <p>由啊啊啊啊aaa 平台创作者上传、经内容审核与品质筛选后的精品内容，每日更新。</p>
+        </div>
+        <a class="vv-sec-link" href="#vvContact">我要上传作品 →</a>
+      </div>
+      <div class="vv-flow" id="vvFlowGrid">
+
+        <article class="vv-vcard">
+          <div class="vv-cover">
+            <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='g7' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23f2f5f9'/%3E%3Cstop offset='1' stop-color='%2384a8c8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23g7)'/%3E%3Crect x='70' y='70' width='220' height='150' rx='8' fill='%23ffffff' opacity='.7'/%3E%3Crect x='320' y='120' width='250' height='170' rx='8' fill='%232b4763' opacity='.55'/%3E%3Cg stroke='%232b4763' stroke-width='3' opacity='.5'%3E%3Cpath d='M70 260 L290 260 M70 286 L230 286'/%3E%3C/g%3E%3C/svg%3E" alt="家居收纳视频封面：浅色房间里的层架与收纳盒" width="640" height="360">
+            <span class="vv-cover-tag">经验分享</span>
+            <span class="vv-cover-dur">09:26</span>
+            <span class="vv-cover-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5 L19 12 L8 19 Z"/></svg></span>
+          </div>
+          <div class="vv-vcard-body">
+            <h3>六平米小房间的重整方案</h3>
+            <p>不买新家具，只用三件旧物重新规划动线，让狭小空间重新有了呼吸感。</p>
+            <div class="vv-meta"><span class="vv-avt a2">沐</span><span>沐白生活</span><span>·</span><span>3.2 万播放</span></div>
+            <div class="vv-actions">
+              <button class="vv-act" type="button" data-like="562">赞 <b>562</b></button>
+              <button class="vv-act" type="button" data-fav>收藏</button>
+              <button class="vv-act" type="button" data-share="六平米小房间的重整方案">分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="vv-vcard">
+          <div class="vv-cover">
+            <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='g8' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%23152033'/%3E%3Cstop offset='.6' stop-color='%235c9aff'/%3E%3Cstop offset='1' stop-color='%236cf0c0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23g8)'/%3E%3Cg stroke='%23eaf4ff' stroke-width='2' opacity='.55' fill='none'%3E%3Ccircle cx='320' cy='180' r='96'/%3E%3Ccircle cx='320' cy='180' r='62'/%3E%3Ccircle cx='320' cy='180' r='30'/%3E%3Cpath d='M224 180 L416 180 M320 84 L320 276'/%3E%3C/g%3E%3C/svg%3E" alt="科技前沿视频封面：环形结构与冷光线条" width="640" height="360">
+            <span class="vv-cover-tag">科技前沿</span>
+            <span class="vv-cover-dur">14:08</span>
+            <span class="vv-cover-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5 L19 12 L8 19 Z"/></svg></span>
+          </div>
+          <div class="vv-vcard-body">
+            <h3>影像工具这一年的三个变化</h3>
+            <p>从拍摄到交付，工具链的重心正在迁移。我们用实际项目复盘了三次尝试。</p>
+            <div class="vv-meta"><span class="vv-avt a5">衡</span><span>程序员的镜头</span><span>·</span><span>4.8 万播放</span></div>
+            <div class="vv-actions">
+              <button class="vv-act" type="button" data-like="903">赞 <b>903</b></button>
+              <button class="vv-act" type="button" data-fav>收藏</button>
+              <button class="vv-act" type="button" data-share="影像工具这一年的三个变化">分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="vv-vcard">
+          <div class="vv-cover">
+            <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='g9' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23fff4e3'/%3E%3Cstop offset='1' stop-color='%23e0a35c'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23g9)'/%3E%3Ccircle cx='240' cy='180' r='90' fill='%23fff9ef' opacity='.75'/%3E%3Cpath d='M240 90 A90 90 0 0 1 330 180 L240 180 Z' fill='%23d9822b' opacity='.55'/%3E%3Cg fill='%238a5420' opacity='.6'%3E%3Crect x='370' y='120' width='180' height='10' rx='5'/%3E%3Crect x='370' y='146' width='140' height='10' rx='5'/%3E%3Crect x='370' y='172' width='160' height='10' rx='5'/%3E%3C/g%3E%3C/svg%3E" alt="美食烹饪视频封面：阳光下的打蛋与面粉" width="640" height="360">
+            <span class="vv-cover-tag">美食烹饪</span>
+            <span class="vv-cover-dur">11:33</span>
+            <span class="vv-cover-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5 L19 12 L8 19 Z"/></svg></span>
+          </div>
+          <div class="vv-vcard-body">
+            <h3>一块黄油司康的黄金比例</h3>
+            <p>温度、折叠次数与冷藏时间，三个变量决定口感。用最朴素的做法找到稳定答案。</p>
+            <div class="vv-meta"><span class="vv-avt a4">酥</span><span>烤箱日志</span><span>·</span><span>7.6 万播放</span></div>
+            <div class="vv-actions">
+              <button class="vv-act" type="button" data-like="1467">赞 <b>1467</b></button>
+              <button class="vv-act" type="button" data-fav>收藏</button>
+              <button class="vv-act" type="button" data-share="一块黄油司康的黄金比例">分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="vv-vcard">
+          <div class="vv-cover">
+            <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='g10' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%231f2d24'/%3E%3Cstop offset='1' stop-color='%238fd7a6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23g10)'/%3E%3Cpath d='M0 300 L140 210 L300 268 L470 190 L640 250 L640 360 L0 360 Z' fill='%23132218' opacity='.85'/%3E%3Cg fill='%23e2ffe9' opacity='.5'%3E%3Ccircle cx='520' cy='86' r='28'/%3E%3Ccircle cx='560' cy='110' r='16'/%3E%3C/g%3E%3Cg stroke='%23e2ffe9' stroke-width='3' opacity='.5' fill='none'%3E%3Cpath d='M80 120 q30 -30 60 0 q-30 30 -60 0'/%3E%3C/g%3E%3C/svg%3E" alt="户外活动视频封面：林间山谷与远足背包" width="640" height="360">
+            <span class="vv-cover-tag">户外活动</span>
+            <span class="vv-cover-dur">20:15</span>
+            <span class="vv-cover-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5 L19 12 L8 19 Z"/></svg></span>
+          </div>
+          <div class="vv-vcard-body">
+            <h3>新手第一次两天一夜负重徒步</h3>
+            <p>装备清单、配速与补给节点全记录，也包括中途想放弃的那个下午。</p>
+            <div class="vv-meta"><span class="vv-avt a3">野</span><span>野径计划</span><span>·</span><span>5.9 万播放</span></div>
+            <div class="vv-actions">
+              <button class="vv-act" type="button" data-like="1121">赞 <b>1121</b></button>
+              <button class="vv-act" type="button" data-fav>收藏</button>
+              <button class="vv-act" type="button" data-share="新手第一次两天一夜负重徒步">分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="vv-vcard">
+          <div class="vv-cover">
+            <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='g11' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%232a2433'/%3E%3Cstop offset='1' stop-color='%23e05c8a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23g11)'/%3E%3Crect x='90' y='80' width='180' height='220' rx='10' fill='%23ffe6ef' opacity='.25'/%3E%3Crect x='300' y='120' width='250' height='180' rx='10' fill='%23ffe6ef' opacity='.16'/%3E%3Cg stroke='%23ffe6ef' stroke-width='3' opacity='.6' fill='none'%3E%3Cpath d='M120 300 q40 -80 90 -20 q40 50 80 -30'/%3E%3C/g%3E%3C/svg%3E" alt="艺术美学视频封面：展厅墙面与几何色块" width="640" height="360">
+            <span class="vv-cover-tag">艺术美学</span>
+            <span class="vv-cover-dur">07:48</span>
+            <span class="vv-cover-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5 L19 12 L8 19 Z"/></svg></span>
+          </div>
+          <div class="vv-vcard-body">
+            <h3>在小展厅里看一场安静的展</h3>
+            <p>没有讲解器，也没有人流。我们记录了布展最后一天，和策展人的三句话。</p>
+            <div class="vv-meta"><span class="vv-avt a6">颜</span><span>看展的人</span><span>·</span><span>2.7 万播放</span></div>
+            <div class="vv-actions">
+              <button class="vv-act" type="button" data-like="418">赞 <b>418</b></button>
+              <button class="vv-act" type="button" data-fav>收藏</button>
+              <button class="vv-act" type="button" data-share="在小展厅里看一场安静的展">分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="vv-vcard">
+          <div class="vv-cover">
+            <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='g12' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23301d26'/%3E%3Cstop offset='1' stop-color='%23ffb877'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23g12)'/%3E%3Ccircle cx='200' cy='200' r='80' fill='%23ffe0bd' opacity='.55'/%3E%3Ccircle cx='450' cy='150' r='46' fill='%23ffe0bd' opacity='.35'/%3E%3Cpath d='M0 320 L150 270 L320 310 L500 260 L640 300 L640 360 L0 360 Z' fill='%231a1016' opacity='.9'/%3E%3C/svg%3E" alt="萌宠日常视频封面：暖色地毯上的猫与光斑" width="640" height="360">
+            <span class="vv-cover-tag">萌宠日常</span>
+            <span class="vv-cover-dur">06:02</span>
+            <span class="vv-cover-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5 L19 12 L8 19 Z"/></svg></span>
+          </div>
+          <div class="vv-vcard-body">
+            <h3>家里第三只猫搬进来的第七天</h3>
+            <p>从隔离门缝到共享同一个纸箱，七天里的每一次试探都被镜头留了下来。</p>
+            <div class="vv-meta"><span class="vv-avt a1">朵</span><span>三只猫的家</span><span>·</span><span>8.9 万播放</span></div>
+            <div class="vv-actions">
+              <button class="vv-act" type="button" data-like="2380">赞 <b>2380</b></button>
+              <button class="vv-act" type="button" data-fav>收藏</button>
+              <button class="vv-act" type="button" data-share="家里第三只猫搬进来的第七天">分享</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TOPICS -->
+  <section class="vv-sec vv-sec-alt vv-anchor" id="vvTopics">
+    <div class="vv-wrap">
+      <div class="vv-sec-head">
+        <div>
+          <h2>专题企划 <em>·</em> 官方发布的长期内容计划</h2>
+          <p>啊啊啊啊aaa 官方网站围绕可持续议题推出的系列专题，欢迎创作者报名参与共创。</p>
+        </div>
+        <a class="vv-sec-link" href="#vvContact">参与共创 →</a>
+      </div>
+      <div class="vv-topics">
+        <article class="vv-topic">
+          <span class="vv-chip violet">持续更新中</span>
+          <h3>城市十二时辰</h3>
+          <p>以一天中的十二个时段为线索，记录同一座城市里不同职业人们的真实节奏，目前已上线六集。</p>
+          <div class="vv-topic-foot">
+            <span style="color:#948cab">共 6 集 · 更新至 11 月</span>
+            <a class="vv-sec-link" href="#vvContact">报名参与</a>
+          </div>
+        </article>
+        <article class="vv-topic">
+          <span class="vv-chip">开放征集中</span>
+          <h3>手艺人的一天</h3>
+          <p>从陶艺、木作到织补与修表，走进仍然坚持手工节奏的工作间，记录技艺与时间的关系。</p>
+          <div class="vv-topic-foot">
+            <span style="color:#948cab">共 4 集 · 已收录 12 位匠人</span>
+            <a class="vv-sec-link" href="#vvContact">报名参与</a>
+          </div>
+        </article>
+        <article class="vv-topic">
+          <span class="vv-chip warm">冬季挑战赛</span>
+          <h3>冬季影像挑战</h3>
+          <p>限时 21 天，围绕“温度”这一关键词提交一支 3 到 10 分钟的短片，由编辑部与社区共同投票。</p>
+          <div class="vv-topic-foot">
+            <span style="color:#948cab">报名截至 12 月 10 日</span>
+            <a class="vv-sec-link" href="#vvContact">我要报名</a>
+          </div>
+        </article>
+        <article class="vv-topic">
+          <span class="vv-chip">长期计划</span>
+          <h3>小城放映室</h3>
+          <p>把优秀原创短片带到非一线城市的社区空间，用线下放映加主创对谈的方式完成二次传播。</p>
+          <div class="vv-topic-foot">
+            <span style="color:#948cab">已举办 9 场 · 覆盖 6 座城市</span>
+            <a class="vv-sec-link" href="#vvNews">查看回顾</a>
+          </div>
+        </article>
+        <article class="vv-topic">
+          <span class="vv-chip violet">新人友好</span>
+          <h3>第一次拍片</h3>
+          <p>面向零基础创作者的入门企划，提供选题模板、拍摄清单与剪辑思路，陪伴完成第一支作品。</p>
+          <div class="vv-topic-foot">
+            <span style="color:#948cab">共 8 期 · 累计 3.4 万人参与</span>
+            <a class="vv-sec-link" href="#vvInspire">领取灵感</a>
+          </div>
+        </article>
+        <article class="vv-topic">
+          <span class="vv-chip">公益方向</span>
+          <h3>被看见的角落</h3>
+          <p>与企业社会责任团队合作，为小型公益组织拍摄纪实短片，帮助真实的需求被更多人知道。</p>
+          <div class="vv-topic-foot">
+            <span style="color:#948cab">共 5 集 · 合作机构 7 家</span>
+            <a class="vv-sec-link" href="#vvContact">合作咨询</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CREATORS -->
+  <section class="vv-sec vv-anchor" id="vvCreators">
+    <div class="vv-wrap">
+      <div class="vv-sec-head">
+        <div>
+          <h2>创作者矩阵 <em>·</em> 值得信赖的原创力量</h2>
+          <p>平台持续与深耕各垂直领域的创作者合作，共同维护真实、专业的内容口碑。</p>
+        </div>
+        <a class="vv-sec-link" href="#vvContact">申请入驻 →</a>
+      </div>
+      <div class="vv-creators">
+        <article class="vv-creator">
+          <span class="vv-avt a1">周</span>
+          <div class="vv-creator-info">
+            <h3>老周的面包房</h3>
+            <div class="vv-role">美食烹饪 · 手作</div>
+            <p>做了十四年面包，也拍了十四年厨房。镜头始终对准操作台与清晨的光。</p>
+            <div class="vv-creator-nums"><span>作品 <b>128</b></span><span>关注 <b>6.4 万</b></span></div>
+          </div>
+        </article>
+        <article class="vv-creator">
+          <span class="vv-avt a2">沐</span>
+          <div class="vv-creator-info">
+            <h3>沐白生活</h3>
+            <div class="vv-role">家居收纳 · 生活方式</div>
+            <p>专注小户型与租房场景的实用整理方案，强调可执行、可复现、可长期维持。</p>
+            <div class="vv-creator-nums"><span>作品 <b>96</b></span><span>关注 <b>5.1 万</b></span></div>
+          </div>
+        </article>
+        <article class="vv-creator">
+          <span class="vv-avt a5">衡</span>
+          <div class="vv-creator-info">
+            <h3>程序员的镜头</h3>
+            <div class="vv-role">科技前沿 · 深度测评</div>
+            <p>用工程视角拆解影像工具，偏爱可量化的对比与可验证的结论。</p>
+            <div class="vv-creator-nums"><span>作品 <b>74</b></span><span>关注 <b>4.7 万</b></span></div>
+          </div>
+        </article>
+        <article class="vv-creator">
+          <span class="vv-avt a3">野</span>
+          <div class="vv-creator-info">
+            <h3>野径计划</h3>
+            <div class="vv-role">户外活动 · 旅行见闻</div>
+            <p>三名成员组成的户外纪录小队，专注轻量化徒步与在地文化观察。</p>
+            <div class="vv-creator-nums"><span>作品 <b>61</b></span><span>关注 <b>3.9 万</b></span></div>
+          </div>
+        </article>
+        <article class="vv-creator">
+          <span class="vv-avt a4">颜</span>
+          <div class="vv-creator-info">
+            <h3>看展的人</h3>
+            <div class="vv-role">艺术美学 · 文化访谈</div>
+            <p>把展览现场拍成可以慢慢看的影像，关注作品背后的创作过程与策展逻辑。</p>
+            <div class="vv-creator-nums"><span>作品 <b>53</b></span><span>关注 <b>2.8 万</b></span></div>
+          </div>
+        </article>
+        <article class="vv-creator">
+          <span class="vv-avt a6">朵</span>
+          <div class="vv-creator-info">
+            <h3>三只猫的家</h3>
+            <div class="vv-role">萌宠日常 · 治愈影像</div>
+            <p>记录三只猫与一个普通家庭的日常磨合并置，不刻意编排，只耐心等待。</p>
+            <div class="vv-creator-nums"><span>作品 <b>212</b></span><span>关注 <b>9.2 万</b></span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT LONG -->
+  <section class="vv-sec vv-sec-alt vv-anchor" id="vvAbout">
+    <div class="vv-wrap vv-about">
+      <div class="vv-about-visual">
+        <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 600'%3E%3Cdefs%3E%3ClinearGradient id='gA' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%231c1a2e'/%3E%3Cstop offset='.5' stop-color='%23433968'/%3E%3Cstop offset='1' stop-color='%23ff8a5c'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='480' height='600' fill='url(%23gA)'/%3E%3Ccircle cx='330' cy='180' r='120' fill='%23ffd9a8' opacity='.22'/%3E%3Cpath d='M0 420 L110 340 L230 392 L340 310 L480 372 L480 600 L0 600 Z' fill='%23161221' opacity='.92'/%3E%3Cg fill='%23ffffff' opacity='.7'%3E%3Crect x='52' y='80' width='130' height='11' rx='5.5'/%3E%3Crect x='52' y='106' width='92' height='11' rx='5.5' opacity='.55'/%3E%3Crect x='52' y='132' width='108' height='11' rx='5.5' opacity='.35'/%3E%3C/g%3E%3Cg stroke='%2348e0b8' stroke-width='3' opacity='.6' fill='none'%3E%3Cpath d='M52 480 q60 -50 120 0'/%3E%3C/g%3E%3C/svg%3E" alt="啊啊啊啊aaa 品牌理念视觉：夜色中的阶梯与暖光" width="480" height="600">
+        <span class="vv-cover-tag">品牌故事</span>
+      </div>
+      <div class="vv-long">
+        <h2>关于啊啊啊啊aaa：一个把内容当作长期事业的品牌</h2>
+        <p>啊啊啊啊aaa 创立之初，只有一间不足二十平米的剪辑室和三台旧机器。团队最初的判断很朴素：真正值得被记录的东西，往往不在喧闹处，而在那些被忽略的日常里。于是我们把官方网站的第一条内容做成了一支关于清晨菜市场的短片，没有配乐，只有环境声。那条片子后来被很多人转发，也让我们确定了一件事——啊啊啊啊aaa 要走的路，是做有耐心、有质感、可信赖的原创内容。</p>
+        <p>今天的啊啊啊啊aaa 已经成长为一家持续运营的视频品牌企业，拥有内容策划、拍摄制作、平台运营与创作者服务四条业务线。但品牌的内核并没有变化：我们相信真实的力量，也相信专业可以被感知。平台上的每一支精品内容，都要经过选题评估、素材核查、成片审看三道流程；我们宁愿慢一点，也不愿意让粗糙的东西占用用户的时间。</p>
+        <div class="vv-quote-line">"我们不做流量的追逐者，我们做时间的收藏者。"——啊啊啊啊aaa 内容中心</div>
+        <h3>关键词定位与解析</h3>
+        <p>“啊啊啊啊aaa”这个关键词，乍看之下更像是一种情绪的直觉表达，而不是一个行业名词。但在啊啊啊啊aaa 的理解里，它恰好对应了影像最本质的价值：当一个人被画面击中时，语言往往是失效的，剩下的只有最直接的感叹。因此我们把品牌定位为“情绪与真实的影像容器”，围绕那些让人忍不住发出感叹的瞬间建立内容体系——可能是凌晨面包房的第一炉出炉，也可能是一个手艺人完成最后一道打磨时抬头的笑容。</p>
+        <p>基于这一定位，啊啊啊啊aaa 官方网站的内容结构分为四条主线。第一条是纪录与人物，强调真实与陪伴，用较长的时间跨度去跟拍一个人或一件事；第二条是实用与教程，强调专业与品质，把创作者的经验转化成可被学习的方法；第三条是生活方式，强调温暖与多元，覆盖家居、美食、萌宠、艺术等日常场景；第四条是行业观察，强调影响力与社会责任，讨论内容生态本身的变化。</p>
+        <p>在创作者侧，啊啊啊啊aaa 提供的不只是一个上传通道，而是一整套成长支持。新入驻的创作者会获得选题诊断与拍摄清单；进入成长期的创作者可以参与官方企划，与编辑一起完成从策划到发布的全流程；成熟创作者则有机会进入品牌合作与线下放映计划。我们始终认为，平台的竞争力不在算法，而在于能否让创作者感受到被认真对待。</p>
+        <p>在用户侧，啊啊啊啊aaa 坚持“用户至上”的产品原则。播放页去掉了一切干扰阅读的元素，评论区保留时间顺序而不过度折叠，收藏夹支持按专题整理。我们希望用户在啊啊啊啊aaa 的每一次停留，都是有收获的停留，而不是被不断推着往下滑的消耗。</p>
+        <p>面向未来，啊啊啊啊aaa 会继续深耕垂直领域，把纪录、手作、户外、科技与美学五个方向做深做透；同时扩大与线下空间的合作，让小城放映室走进更多城市。我们相信，一个品牌的价值最终由它留下的作品决定。啊啊啊啊aaa 愿意用更长的时间，去积累这些作品，也愿意把过程开放给所有同行的人。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WALL -->
+  <section class="vv-sec vv-anchor">
+    <div class="vv-wrap">
+      <div class="vv-sec-head">
+        <div>
+          <h2>影像墙 <em>·</em> 社区精选封面</h2>
+          <p>来自啊啊啊啊aaa 创作者社区的静帧作品，展现多元视角下的日常质感。</p>
+        </div>
+        <a class="vv-sec-link" href="#vvContact">上传我的作品 →</a>
+      </div>
+      <div class="vv-wall">
+        <figure class="w-lg">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cdefs%3E%3ClinearGradient id='w1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2323headers'/%3E%3Cstop offset='0' stop-color='%23231b38'/%3E%3Cstop offset='1' stop-color='%237c6cf0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='600' height='600' fill='url(%23w1)'/%3E%3Cg stroke='%23e6e0ff' stroke-width='3' opacity='.4' fill='none'%3E%3Cpath d='M80 480 L200 300 L320 420 L440 240 L540 380'/%3E%3C/g%3E%3Ccircle cx='430' cy='150' r='54' fill='%23ffe6bd' opacity='.65'/%3E%3C/svg%3E" alt="影像墙大图：紫色暮色下山脊线条与光源">
+          <figcaption>《暮色山脊》 · 野径计划</figcaption>
+        </figure>
+        <figure class="w-md">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Cdefs%3E%3ClinearGradient id='w2' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%23352a1e'/%3E%3Cstop offset='1' stop-color='%23f0b46c'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='400' fill='url(%23w2)'/%3E%3Ccircle cx='200' cy='210' r='96' fill='%23fff3dd' opacity='.55'/%3E%3Ccircle cx='200' cy='210' r='52' fill='%23e0a35c' opacity='.75'/%3E%3C/svg%3E" alt="影像墙方图：暖光下的陶土圆盘">
+          <figcaption>《拉坯》 · 手作现场</figcaption>
+        </figure>
+        <figure class="w-sm">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Cdefs%3E%3ClinearGradient id='w3' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23182a33'/%3E%3Cstop offset='1' stop-color='%2348e0b8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='400' fill='url(%23w3)'/%3E%3Cg stroke='%23e6fff8' stroke-width='2' opacity='.6' fill='none'%3E%3Ccircle cx='200' cy='200' r='96'/%3E%3Ccircle cx='200' cy='200' r='60'/%3E%3C/g%3E%3Cpath d='M200 100 L200 300 M100 200 L300 200' stroke='%23e6fff8' stroke-width='1.5' opacity='.4'/%3E%3C/svg%3E" alt="影像墙小图：绿色同心圆与刻度线">
+          <figcaption>《刻度》 · 程序员的镜头</figcaption>
+        </figure>
+        <figure class="w-sm">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Cdefs%3E%3ClinearGradient id='w4' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ffd9e2'/%3E%3Cstop offset='1' stop-color='%23e05c8a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='400' fill='url(%23w4)'/%3E%3Crect x='70' y='90' width='120' height='220' rx='8' fill='%23fff' opacity='.45'/%3E%3Crect x='220' y='150' width='110' height='160' rx='8' fill='%23301d26' opacity='.35'/%3E%3C/svg%3E" alt="影像墙小图：粉色墙面与画框构图">
+          <figcaption>《展厅一角》 · 看展的人</figcaption>
+        </figure>
+        <figure class="w-md">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Cdefs%3E%3ClinearGradient id='w5' x1='1' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23fff1d8'/%3E%3Cstop offset='1' stop-color='%23d9822b'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='400' fill='url(%23w5)'/%3E%3Cellipse cx='200' cy='250' rx='120' ry='46' fill='%23fff9ef' opacity='.7'/%3E%3Ccircle cx='160' cy='200' r='40' fill='%238a5420' opacity='.5'/%3E%3Ccircle cx='238' cy='214' r='30' fill='%238a5420' opacity='.35'/%3E%3C/svg%3E" alt="影像墙方图：桌面上的面团与面粉">
+          <figcaption>《第一次发酵》 · 烤箱日志</figcaption>
+        </figure>
+        <figure class="w-sm">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Cdefs%3E%3ClinearGradient id='w6' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%232a2b3d'/%3E%3Cstop offset='1' stop-color='%235c9aff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='400' fill='url(%23w6)'/%3E%3Cpath d='M120 280 L200 120 L280 280 Z' fill='none' stroke='%23dbeeff' stroke-width='3' opacity='.65'/%3E%3Ccircle cx='200' cy='280' r='42' fill='%23dbeeff' opacity='.28'/%3E%3C/svg%3E" alt="影像墙小图：蓝色几何三角与圆形">
+          <figcaption>《构成练习》 · 看展的人</figcaption>
+        </figure>
+        <figure class="w-sm">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Cdefs%3E%3ClinearGradient id='w7' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%2313261b'/%3E%3Cstop offset='1' stop-color='%238fd7a6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='400' fill='url(%23w7)'/%3E%3Cpath d='M0 300 L100 220 L200 260 L300 200 L400 250 L400 400 L0 400 Z' fill='%230e1a12' opacity='.8'/%3E%3Ccircle cx='310' cy='100' r='34' fill='%23eafff0' opacity='.6'/%3E%3C/svg%3E" alt="影像墙小图：林间绿色山谷与天光">
+          <figcaption>《山谷清晨》 · 野径计划</figcaption>
+        </figure>
+        <figure class="w-md">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Cdefs%3E%3ClinearGradient id='w8' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23331f28'/%3E%3Cstop offset='1' stop-color='%23ffb877'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='400' fill='url(%23w8)'/%3E%3Ccircle cx='160' cy='230' r='70' fill='%23ffe0bd' opacity='.55'/%3E%3Ccircle cx='290' cy='170' r='34' fill='%23ffe0bd' opacity='.3'/%3E%3Cg fill='%23231a20'%3E%3Cpath d='M120 300 q40 -40 80 0 q-40 12 -80 0'/%3E%3C/g%3E%3C/svg%3E" alt="影像墙方图：暖光客厅里的猫影">
+          <figcaption>《午后的第三只猫》 · 三只猫的家</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="vv-sec vv-sec-alt">
+    <div class="vv-wrap">
+      <div class="vv-sec-head">
+        <div>
+          <h2>用户评价 <em>·</em> 来自社区的真实声音</h2>
+          <p>口碑积累于每一次观看与每一次交流，这些是用户留在啊啊啊啊aaa 的只言片语。</p>
+        </div>
+      </div>
+      <div class="vv-quotes">
+        <article class="vv-quote">
+          <div class="vv-stars">★★★★★</div>
+          <p>“第一次在啊啊啊啊aaa 看到一支关于菜的纪录片，全程没有解说，但我看完了，还回看了两遍。这种耐心在现在的平台上很少见。”</p>
+          <div class="vv-quote-who"><span class="vv-avt a2">林</span><span>林一 · 用户 · 2026-11-12</span></div>
+        </article>
+        <article class="vv-quote">
+          <div class="vv-stars">★★★★★</div>
+          <p>“作为新人创作者，投稿之后收到了一份选题建议文档，很细，连封面字体间距都写了。这比一句‘加油’有用太多。”</p>
+          <div class="vv-quote-who"><span class="vv-avt a3">阿</span><span>阿野 · 创作者 · 2026-11-08</span></div>
+        </article>
+        <article class="vv-quote">
+          <div class="vv-stars">★★★★☆</div>
+          <p>“剪辑教程那期讲得很克制，没有堆术语，直接给时间线和取舍逻辑。希望以后多出这类实战内容。”</p>
+          <div class="vv-quote-who"><span class="vv-avt a4">小</span><span>小满 · 用户 · 2026-11-05</span></div>
+        </article>
+        <article class="vv-quote">
+          <div class="vv-stars">★★★★★</div>
+          <p>“收藏夹可以按专题整理这点太好了。我按‘做饭’和‘睡觉前看’分了两个夹子，日常使用顺手很多。”</p>
+          <div class="vv-quote-who"><span class="vv-avt a6">周</span><span>周周 · 用户 · 2026-10-29</span></div>
+        </article>
+        <article class="vv-quote">
+          <div class="vv-stars">★★★★★</div>
+          <p>“我们是一个小机构，联系啊啊啊啊aaa 拍公益短片，整个过程沟通清楚、时间点明确，成片也比预期更有温度。”</p>
+          <div class="vv-quote-who"><span class="vv-avt a5">陈</span><span>陈老师 · 合作机构 · 2026-10-21</span></div>
+        </article>
+        <article class="vv-quote">
+          <div class="vv-stars">★★★★★</div>
+          <p>“看了半年，感觉像在等一个安静的朋友更新。不催、不吵，但每次都有东西可看。”</p>
+          <div class="vv-quote-who"><span class="vv-avt a1">顾</span><span>顾南 · 用户 · 2026-10-14</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSPIRE -->
+  <section class="vv-sec vv-anchor" id="vvInspire">
+    <div class="vv-wrap">
+      <div class="vv-sec-head">
+        <div>
+          <h2>创作灵感 <em>·</em> 给正在准备第一支短片的你</h2>
+          <p>由啊啊啊啊aaa 编辑团队整理的实用建议，可作为选题与结构的起点。</p>
+        </div>
+        <a class="vv-sec-link" href="#vvContact">提交选题咨询 →</a>
+      </div>
+      <div class="vv-inspire">
+        <div class="vv-insp">
+          <h3>从一个具体动作开始</h3>
+          <p>与其拍“一个手艺人的一天”，不如先拍“他削完第三十根竹条时的手”。具体动作会带来自然的节奏。</p>
+          <button class="vv-act" type="button" data-share="创作灵感：从一个具体动作开始">分享这个思路</button>
+        </div>
+        <div class="vv-insp">
+          <h3>让环境声承担叙事</h3>
+          <p>在很多日常纪录里，环境声比配乐更有说服力。试试先剪出一版完全无音乐的粗剪，再判断哪里真的需要音乐。</p>
+          <button class="vv-act" type="button" data-share="创作灵感：让环境声承担叙事">分享这个思路</button>
+        </div>
+        <div class="vv-insp">
+          <h3>给结尾留一次停顿</h3>
+          <p>不必急于给出结论。让画面在最后一个动作后多停留三秒，观众会替你把话说完。</p>
+          <button class="vv-act" type="button" data-share="创作灵感：给结尾留一次停顿">分享这个思路</button>
+        </div>
+        <div class="vv-insp">
+          <h3>标题写清楚“发生了什么”</h3>
+          <p>“我在菜市场蹲了三天”比“记录生活”更容易被理解，也更容易被合适的人找到。</p>
+          <button class="vv-act" type="button" data-share="创作灵感：标题写清楚发生了什么">分享这个思路</button>
+        </div>
+        <div class="vv-insp">
+          <h3>先定收音方案再定镜头</h3>
+          <p>大量新手片子的短板都在声音。先确认在哪里收音、用几个麦，画面方案往往会随之简化。</p>
+          <button class="vv-act" type="button" data-share="创作灵感：先定收音方案再定镜头">分享这个思路</button>
+        </div>
+        <div class="vv-insp">
+          <h3>把第一次投稿当作练习</h3>
+          <p>平台会给出具体反馈，不需要一次做到完美。完成、发布、复盘，比在硬盘里改了三个月更有效。</p>
+          <button class="vv-act" type="button" data-share="创作灵感：把第一次投稿当作练习">分享这个思路</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWS -->
+  <section class="vv-sec vv-sec-alt vv-anchor" id="vvNews">
+    <div class="vv-wrap">
+      <div class="vv-sec-head">
+        <div>
+          <h2>企业动态 <em>·</em> 官方发布与内容更新</h2>
+          <p>啊啊啊啊aaa 的品牌进展、合作消息与内容计划，均在此同步发布。</p>
+        </div>
+      </div>
+      <ul class="vv-news">
+        <li>
+          <time>2026-11-18</time>
+          <div>
+            <h3>啊啊啊啊aaa 官方网站完成年度内容结构升级</h3>
+            <p>新增纪录、手作、户外三个垂直频道，并优化了收藏夹与专题聚合页的使用路径。</p>
+          </div>
+          <span class="vv-chip">官方发布</span>
+        </li>
+        <li>
+          <time>2026-11-14</time>
+          <div>
+            <h3>「小城放映室」第七、第八场线下放映完成</h3>
+            <p>两场活动分别在两座城市举办，共放映九支原创短片，映后有四位主创参与现场对谈。</p>
+          </div>
+          <span class="vv-chip violet">品牌活动</span>
+        </li>
+        <li>
+          <time>2026-11-09</time>
+          <div>
+            <h3>精品内容扶持计划新增四个垂类方向</h3>
+            <p>面向纪录、手作、户外与美学的创作者开放申请，提供制作支持与联合出品机会。</p>
+          </div>
+          <span class="vv-chip warm">合作机会</span>
+        </li>
+        <li>
+          <time>2026-11-03</time>
+          <div>
+            <h3>冬季影像挑战赛报名启动</h3>
+            <p>以“温度”为主题，21 天内提交 3 至 10 分钟短片即可参与，评选结合编辑部与社区投票。</p>
+          </div>
+          <span class="vv-chip">报名中</span>
+        </li>
+        <li>
+          <time>2026-10-27</time>
+          <div>
+            <h3>内容审核与品质标准说明更新至第三版</h3>
+            <p>进一步明确素材授权、受访者知情同意与字幕规范等条款，供所有创作者查阅参考。</p>
+          </div>
+          <span class="vv-chip">规范说明</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="vv-sec vv-anchor" id="vvFaq">
+    <div class="vv-wrap">
+      <div class="vv-sec-head">
+        <div>
+          <h2>帮助中心 <em>·</em> 常见问题</h2>
+          <p>关于投稿、内容规范与合作方式的高频问题，点击展开查看说明。</p>
+        </div>
+      </div>
+      <div class="vv-faq">
+        <details open>
+          <summary>如何进行投稿？需要满足哪些基本要求？</summary>
+          <p>点击页面右上角的“投稿”按钮填写表单，附上作品链接与简短说明即可。作品需为原创或已获得完整授权，画面清晰、声音可辨，时长建议 3 至 20 分钟。</p>
+        </details>
+        <details>
+          <summary>啊啊啊啊aaa 对内容品质的具体标准是什么？</summary>
+          <p>我们主要看三点：叙事是否完整、信息是否准确、表达是否真诚。技术瑕疵可以在打磨中改善，但素材来源与受访者授权必须清楚可查。</p>
+        </details>
+        <details>
+          <summary>提交后多久会收到反馈？</summary>
+          <p>通常为 5 至 7 个工作日。若遇企划集中征稿期，反馈时间可能延长，我们会通过站内通知同步进度，也欢迎通过联系邮箱查询。</p>
+        </details>
+        <details>
+          <summary>作品入选后会获得哪些支持？</summary>
+          <p>包括选题与结构建议、封面与标题优化、专题推荐位曝光，以及进入官方企划共创的资格。部分项目可获得制作支持或联合出品。</p>
+        </details>
+        <details>
+          <summary>品牌或机构如何与啊啊啊啊aaa 开展合作？</summary>
+          <p>可通过联系表单注明“品牌合作”，我们会根据需求提供内容定制、联合企划、线下放映等方案。我们更倾向长期、有明确表达目标的合作。</p>
+        </details>
+        <details>
+          <summary>平台是否提供素材下载或授权说明？</summary>
+          <p>官方企划会提供对应的素材包与使用说明，仅限项目范围内使用。其他素材的授权情况请在投稿时明确标注来源。</p>
+        </details>
+        <details>
+          <summary>如何参与投票与社区评选？</summary>
+          <p>在专题页与挑战赛页面均有投票入口，登录后每日可参与。评选结果将结合社区投票与编辑部评审，在活动结束后公布。</p>
+        </details>
+        <details>
+          <summary>内容被误判或需要申诉怎么办？</summary>
+          <p>请在联系表单中选择“内容申诉”，附上作品编号与具体情况说明。我们会在收到后重新核对，并给出明确处理结果。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="vv-sec vv-sec-alt vv-anchor" id="vvContact">
+    <div class="vv-wrap">
+      <div class="vv-sec-head">
+        <div>
+          <h2>联系我们 <em>·</em> 投稿、合作与反馈</h2>
+          <p>无论是提交作品、洽谈合作，还是提出建议，我们都愿意认真读完每一条信息。</p>
+        </div>
+      </div>
+      <div class="vv-contact">
+        <div class="vv-contact-card">
+          <h2>啊啊啊啊aaa 官方网站 · 品牌联络</h2>
+          <p>我们是一家持续运营的视频品牌企业，办公地点与联系方式如下。来信请在标题中注明事由，便于我们更快转交到对应团队。</p>
+          <div class="vv-contact-list">
+            <div><b>内容投稿</b><span>hello@aaa-video.example</span></div>
+            <div><b>品牌合作</b><span>brand@aaa-video.example</span></div>
+            <div><b>媒体联络</b><span>press@aaa-video.example</span></div>
+            <div><b>办公地址</b><span>城市创意园 B 座 7 层 内容中心</span></div>
+            <div><b>工作时间</b><span>周一至周五 10:00 – 19:00</span></div>
+            <div><b>企业资质</b><span>广播电视节目制作经营许可（示例编号）</span></div>
+          </div>
+        </div>
+        <form class="vv-form" id="vvContactForm">
+          <div>
+            <label for="vvName">称呼</label>
+            <input id="vvName" name="name" type="text" placeholder="怎么称呼你" required>
+          </div>
+          <div>
+            <label for="vvType">事由</label>
+            <select id="vvType" name="type">
+              <option>作品投稿</option>
+              <option>品牌合作</option>
+              <option>媒体联络</option>
+              <option>内容申诉</option>
+              <option>其他反馈</option>
+            </select>
+          </div>
+          <div>
+            <label for="vvMsg">内容说明</label>
+            <textarea id="vvMsg" name="msg" placeholder="简单说明你的作品、合作意向或遇到的问题" required></textarea>
+          </div>
+          <button class="vv-btn vv-btn-solid" type="submit">提交信息</button>
+          <p class="vv-note">本表单为前端演示，提交后不会真正发送邮件。你也可以直接通过上方邮箱联系我们。</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="vv-footer">
+  <div class="vv-wrap">
+    <div class="vv-foot-grid">
+      <div>
+        <h4>啊啊啊啊aaa</h4>
+        <p>原创影像品牌官方网站。我们相信真实与专业的力量，用持续运营的精品内容，陪伴每一位愿意认真观看的人。</p>
+        <p>官方网站 · 官方发布 · 持续运营中</p>
+      </div>
+      <div>
+        <h4>内容频道</h4>
+        <a href="#vvFocus">焦点内容</a>
+        <a href="#vvFlow">热门视频</a>
+        <a href="#vvTopics">专题企划</a>
+        <a href="#vvInspire">创作灵感</a>
+      </div>
+      <div>
+        <h4>关于我们</h4>
+        <a href="#vvAbout">品牌故事</a>
+        <a href="#vvCreators">创作者矩阵</a>
+        <a href="#vvNews">企业动态</a>
+        <a href="#vvFaq">帮助中心</a>
+      </div>
+      <div>
+        <h4>参与</h4>
+        <a href="#vvContact">作品投稿</a>
+        <a href="#vvContact">品牌合作</a>
+        <a href="#vvContact">内容申诉</a>
+        <a href="#vvTop">回到顶部</a>
+      </div>
+    </div>
+    <div class="vv-foot-bottom">
+      <span>© 2026 啊啊啊啊aaa 版权所有 · 品牌官方网站 · 内容仅作展示示例</span>
+      <span>企业运营 · 内容审核备案（示例）· 用户至上 · 持续更新</span>
+    </div>
+  </div>
+</footer>
+
+<button class="vv-top" id="vvTopBtn" type="button" aria-label="回到顶部">↑</button>
+<div class="vv-toast" id="vvToast" role="status" aria-live="polite"></div>
+
+<div class="vv-modal" id="vvShareModal" role="dialog" aria-modal="true" aria-labelledby="vvShareTitle">
+  <div class="vv-modal-box">
+    <button class="vv-modal-close" type="button" data-close aria-label="关闭">×</button>
+    <h3 id="vvShareTitle">分享这支作品</h3>
+    <p class="vv-sub" id="vvShareName">把好内容递给更多人</p>
+    <div class="vv-share-row">
+      <button class="vv-act" type="button" data-copy>复制页面链接</button>
+      <button class="vv-act" type="button" data-shareto="微信">分享到微信</button>
+      <button class="vv-act" type="button" data-shareto="微博">分享到微博</button>
+      <button class="vv-act" type="button" data-shareto="QQ">分享到 QQ</button>
+    </div>
+    <p class="vv-note">提示：分享功能为前端演示，实际发布需在对应应用中完成。</p>
+  </div>
+</div>
+
+<div class="vv-modal" id="vvSubmitModal" role="dialog" aria-modal="true" aria-labelledby="vvSubmitTitle">
+  <div class="vv-modal-box">
+    <button class="vv-modal-close" type="button" data-close aria-label="关闭">×</button>
+    <h3 id="vvSubmitTitle">作品投稿入口</h3>
+    <p class="vv-sub">填写基本信息，我们会在 5 至 7 个工作日内给出反馈。</p>
+    <form class="vv-form" id="vvSubmitForm">
+      <div>
+        <label for="vvWorkName">作品名称</label>
+        <input id="vvWorkName" type="text" placeholder="给你的短片起个准确的名字" required>
+      </div>
+      <div>
+        <label for="vvWorkCat">所属方向</label>
+        <select id="vvWorkCat">
+          <option>纪录 / 人物</option>
+          <option>实用 / 教程</option>
+          <option>生活方式</option>
+          <option>行业观察</option>
+          <option>萌宠 / 日常</option>
+        </select>
+      </div>
+      <div>
+        <label for="vvWorkDesc">一句话介绍</label>
+        <textarea id="vvWorkDesc" placeholder="说说它讲了什么，以及你为什么想拍它" required></textarea>
+      </div>
+      <button class="vv-btn vv-btn-solid" type="submit">提交投稿信息</button>
+    </form>
+  </div>
+</div>
+
+<script>
+(function(){
+  var d=document;
+
+  /* toast */
+  var toast=d.getElementById('vvToast'),toastTimer=null;
+  function showToast(msg){
+    toast.textContent=msg;
+    toast.classList.add('vv-show');
+    clearTimeout(toastTimer);
+    toastTimer=setTimeout(function(){toast.classList.remove('vv-show')},2200);
+  }
+
+  /* notice rotation */
+  var notices=Array.prototype.slice.call(d.querySelectorAll('#vvNoticeTrack .vv-notice-item'));
+  var ni=0;
+  if(notices.length>1){
+    notices.forEach(function(el,i){el.classList.toggle('vv-on',i===0)});
+    setInterval(function(){
+      notices[ni].classList.remove('vv-on');
+      ni=(ni+1)%notices.length;
+      notices[ni].classList.add('vv-on');
+    },5200);
+  }
+
+  /* mobile nav */
+  var burger=d.getElementById('vvBurger'),nav=d.getElementById('vvNav');
+  burger.addEventListener('click',function(){
+    var open=nav.classList.toggle('vv-open');
+    burger.setAttribute('aria-expanded',open?'true':'false');
+  });
+  nav.addEventListener('click',function(e){
+    if(e.target.tagName==='A'){
+      nav.classList.remove('vv-open');
+      burger.setAttribute('aria-expanded','false');
+    }
+  });
+
+  /* search feedback */
+  var searchForm=d.getElementById('vvSearchForm');
+  searchForm.addEventListener('submit',function(e){
+    e.preventDefault();
+    var q=d.getElementById('vvSearchInput').value.trim();
+    if(!q){showToast('请输入关键词，例如「收纳」「户外」');return;}
+    var cards=Array.prototype.slice.call(d.querySelectorAll('#vvFlowGrid .vv-vcard'));
+    var hit=0;
+    cards.forEach(function(c){
+      var txt=c.textContent;
+      var ok=txt.indexOf(q)>-1;
+      c.style.display=ok?'':'none';
+      if(ok)hit++;
+    });
+    showToast(hit?('找到 '+hit+' 条与「'+q+'」相关的内容'):('暂未匹配到「'+q+'」，已为你保留全部内容'));
+    if(!hit){cards.forEach(function(c){c.style.display=''});}
+    var flow=d.getElementById('vvFlow');
+    if(flow)flow.scrollIntoView({behavior:'smooth',block:'start'});
+  });
+
+  /* like */
+  d.addEventListener('click',function(e){
+    var like=e.target.closest('[data-like]');
+    if(like){
+      var base=parseInt(like.getAttribute('data-like'),10)||0;
+      var b=like.querySelector('b');
+      var cur=parseInt(b.textContent,10)||base;
+      var on=like.classList.toggle('vv-on');
+      b.textContent=on?cur+1:Math.max(cur-1,0);
+      showToast(on?'已点赞':'已取消点赞');
+      return;
+    }
+    var fav=e.target.closest('[data-fav]');
+    if(fav){
+      var f=fav.classList.toggle('vv-on');
+      fav.textContent=f?'已收藏':'收藏';
+      showToast(f?'已加入收藏夹':'已从收藏夹移除');
+    }
+  });
+
+  /* share modal */
+  var shareModal=d.getElementById('vvShareModal'),shareName=d.getElementById('vvShareName');
+  var currentShare='啊啊啊啊aaa 官方网站';
+  d.addEventListener('click',function(e){
+    var s=e.target.closest('[data-share]');
+    if(s){
+      currentShare=s.getAttribute('data-share');
+      shareName.textContent='《'+currentShare+'》';
+      shareModal.classList.add('vv-open');
+    }
+  });
+  function closeModals(){
+    d.querySelectorAll('.vv-modal').forEach(function(m){m.classList.remove('vv-open')});
+  }
+  d.querySelectorAll('[data-close]').forEach(function(b){b.addEventListener('click',closeModals)});
+  d.querySelectorAll('.vv-modal').forEach(function(m){
+    m.addEventListener('click',function(e){if(e.target===m)closeModals()});
+  });
+  d.addEventListener('keydown',function(e){if(e.key==='Escape')closeModals()});
+
+  /* copy */
+  d.addEventListener('click',function(e){
+    var c=e.target.closest('[data-copy]');
+    if(!c)return;
+    var link=location.href.split('#')[0];
+    if(navigator.clipboard&&navigator.clipboard.writeText){
+      navigator.clipboard.writeText(link).then(function(){
+        showToast('链接已复制到剪贴板');
+      },function(){
+        showToast('复制失败，请手动选择地址栏链接');
+      });
+    }else{
+      showToast('当前浏览器不支持自动复制');
+    }
+    c.textContent='已复制';
+    setTimeout(function(){c.textContent='复制页面链接'},2000);
+  });
+
+  /* share to */
+  d.addEventListener('click',function(e){
+    var t=e.target.closest('[data-shareto]');
+    if(!t)return;
+    var app=t.getAttribute('data-shareto');
+    showToast('已准备分享到'+app+'：'+currentShare);
+  });
+
+  /* video play hint */
+  d.addEventListener('click',function(e){
+    var v=e.target.closest('[data-vv-video]');
+    if(v){showToast('《'+v.getAttribute('data-vv-video')+'》为示例内容，请在播放页查看完整信息');}
+  });
+
+  /* submit modal */
+  var submitModal=d.getElementById('vvSubmitModal');
+  d.getElementById('vvSubmitBtn').addEventListener('click',function(){
+    submitModal.classList.add('vv-open');
+  });
+  d.getElementById('vvSubmitForm').addEventListener('submit',function(e){
+    e.preventDefault();
+    closeModals();
+    showToast('投稿信息已记录，我们的编辑会尽快联系你');
+    this.reset();
+  });
+  d.getElementById('vvContactForm').addEventListener('submit',function(e){
+    e.preventDefault();
+    showToast('信息已记录，感谢你的来信');
+    this.reset();
+  });
+
+  /* back to top */
+  var topBtn=d.getElementById('vvTopBtn');
+  window.addEventListener('scroll',function(){
+    if(window.scrollY>520){topBtn.classList.add('vv-show');}
+    else{topBtn.classList.remove('vv-show');}
+  },{passive:true});
+  topBtn.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});
+
+  /* count up */
+  function countUp(el){
+    var target=parseInt(el.getAttribute('data-count'),10)||0;
+    var start=null,dur=1400;
+    function step(ts){
+      if(!start)start=ts;
+      var p=Math.min((ts-start)/dur,1);
+      var eased=1-Math.pow(1-p,3);
+      var val=Math.floor(target*eased);
+      el.textContent=val>=1000?(val>=10000?val.toLocaleString('en-US'):val):val;
+      if(p<1)requestAnimationFrame(step);
+      else el.textContent=target>=10000?target.toLocaleString('en-US'):target;
+    }
+    requestAnimationFrame(step);
+  }
+  var counted=false;
+  var statEls=Array.prototype.slice.call(d.querySelectorAll('[data-count]'));
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting&&!counted){
+          counted=true;
+          statEls.forEach(countUp);
+          io.disconnect();
+        }
+      });
+    },{threshold:.4});
+    var anchor=statEls[0];
+    if(anchor)io.observe(anchor.closest('.vv-stats')||anchor);
+  }else{
+    statEls.forEach(countUp);
+  }
+})();
+</script>
+</body>
+  </html>
